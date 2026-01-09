@@ -1,18 +1,18 @@
-# AI-Based Wildlife Species Detection 
+# AI-Based Wildlife Species Detection 🐾
 
 This project implements an **AI-based wildlife species detection system** using **YOLOv8** and **Roboflow**.  
-The goal is to automatically detect and classify wildlife species from images, which is especially useful for **camera trap analysis, wildlife monitoring, and conservation research**.
+The goal is to automatically detect and classify wildlife species from images, making it suitable for **camera trap analysis, wildlife monitoring, and conservation research**.
 
 ---
 
 ## 📌 Project Overview
 
-- **Task**: Object Detection (Multi-class)
-- **Model**: YOLOv8
-- **Framework**: Ultralytics YOLO
-- **Dataset Tool**: Roboflow
-- **Use Case**: Wildlife monitoring, conservation, and research
-- **Project Type**: Final Year / Research / Resume Project
+- **Task**: Multi-class Object Detection  
+- **Model**: YOLOv8  
+- **Framework**: Ultralytics YOLO  
+- **Dataset Tool**: Roboflow  
+- **Use Case**: Wildlife monitoring & conservation  
+- **Project Type**: Final Year / Research / Portfolio Project  
 
 ---
 
@@ -22,34 +22,47 @@ The goal is to automatically detect and classify wildlife species from images, w
 - It contains **multiple wildlife species and humans**.
 - Images are split into **train / validation / test** sets.
 
-⚠️ **Note**:  
-Due to GitHub size limits, raw images are not included in this repository.  
+⚠️ **Note**  
+Due to GitHub size limitations, raw images are **not included** in this repository.  
 Only the dataset structure and labels are provided as `dataset.zip`.
 
-📥 **Dataset Source (Roboflow)**  
+### 📥 Dataset Access (Roboflow – Private)
 
-The dataset was created and annotated using **Roboflow**.  
-Due to privacy and size constraints, the dataset is kept **private** on Roboflow.
-
-- Raw images are hosted securely on Roboflow
-- This repository includes only the dataset structure and labels (`dataset.zip`)
-- The full dataset can be programmatically downloaded during training using the Roboflow API (with an API key)
-
+- Raw images are securely hosted on Roboflow
+- This repository includes only dataset structure and labels (`dataset.zip`)
+- The full dataset can be downloaded programmatically using the **Roboflow API** with a valid API key
 
 ---
 
 ## 🧠 Model Details
 
-- **Architecture**: YOLOv8
-- **Training Platform**: Roboflow Training + Ultralytics
-- **Checkpoint Type**: Object Detection (Fast)
+- **Architecture**: YOLOv8  
+- **Training Platform**: Roboflow Hosted Training + Ultralytics  
+- **Model Type**: Object Detection (Fast)
 
 ### 📊 Performance Metrics
+
 | Metric | Value |
 |------|------|
-| mAP@50 | **82.7%** |
-| Precision | **84.0%** |
-| Recall | **77.2%** |
+| **mAP@50** | 82.7% |
+| **Precision** | 84.0% |
+| **Recall** | 77.2% |
+
+---
+
+## 🔍 Model Inference Results
+
+The model was trained and evaluated using Roboflow’s hosted training pipeline.  
+Due to plan limitations, trained weights were not exported.
+
+Inference results were generated using Roboflow’s visualization tools.
+
+### 📸 Sample Detection Outputs
+
+![Detection Result 1](result/detection_1.png)
+![Detection Result 2](result/detection_2.png)
+
+These results demonstrate accurate detection of wildlife species and humans in camera-trap-style images.
 
 ---
 
@@ -57,60 +70,6 @@ Due to privacy and size constraints, the dataset is kept **private** on Roboflow
 
 ### 1️⃣ Clone the Repository
 
+```bash
 git clone https://github.com/Rupam160/AI-Based-Wildlife-Species-Detection.git
 cd AI-Based-Wildlife-Species-Detection
-
-🏋️ Model Training (YOLOv8)
-
-Training is done using Google Colab or a local GPU.
-
-Install Dependencies
-pip install ultralytics roboflow
-
-Download Dataset from Roboflow
-
-from roboflow import Roboflow
-
-rf = Roboflow(api_key="YOUR_API_KEY")
-project = rf.workspace("rupam").project("wildlife-species-detection")
-dataset = project.version(1).download("yolov8")
-
-
-Train the Model
-from ultralytics import YOLO
-
-model = YOLO("yolov8n.pt")
-model.train(data="data.yaml", epochs=50, imgsz=640)
-
-
-🎯 Applications
-
-Wildlife population monitoring
-
-Camera trap image analysis
-
-Forest surveillance
-
-Human–animal interaction detection
-
-Conservation research
-
-🔮 Future Work
-
-Deploy as a Streamlit web application
-
-Add real-time video inference
-
-Improve accuracy with data augmentation
-
-Deploy as an API using FastAPI
-
-👤 Author
-
-Rupam Barat
-B.Tech – Computer Science & Engineering
-Final Year Project
-
-📜 License
-
-This project is released for academic and research purposes.
