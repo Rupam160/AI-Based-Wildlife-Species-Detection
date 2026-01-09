@@ -46,23 +46,6 @@ https://universe.roboflow.com/rupam/humans-and-animals-detection-v2vzd
 
 ---
 
-## 📁 Project Structure
-
-
-
-AI-Based-Wildlife-Species-Detection/
-│
-├── dataset.zip # Dataset structure (labels only)
-├── training/ # Training notebooks
-│ └── train_yolov8.ipynb
-├── inference/ # Inference scripts
-│ ├── predict_image.py
-│ └── predict_video.py
-├── README.md
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
