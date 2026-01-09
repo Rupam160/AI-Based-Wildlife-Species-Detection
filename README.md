@@ -57,10 +57,10 @@ Due to plan limitations, trained weights were not exported.
 
 Inference results were generated using Roboflow’s visualization tools.
 
-### 📸 Sample Detection Outputs
+### Sample Detection Outputs
 
-![Detection Result 1](result/detection_1.png)
-![Detection Result 2](result/detection_2.png)
+![Detection Result 1](result/Result 1.png)
+![Detection Result 2](result/Result 2.png)
 
 These results demonstrate accurate detection of wildlife species and humans in camera-trap-style images.
 
@@ -68,7 +68,7 @@ These results demonstrate accurate detection of wildlife species and humans in c
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/Rupam160/AI-Based-Wildlife-Species-Detection.git
