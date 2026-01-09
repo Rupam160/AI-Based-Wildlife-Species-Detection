@@ -68,11 +68,13 @@ Install Dependencies
 pip install ultralytics roboflow
 
 Download Dataset from Roboflow
+
 from roboflow import Roboflow
 
 rf = Roboflow(api_key="YOUR_API_KEY")
-project = rf.workspace("rupam").project("humans-and-animals-detection-v2vzd")
+project = rf.workspace("rupam").project("wildlife-species-detection")
 dataset = project.version(1).download("yolov8")
+
 
 Train the Model
 from ultralytics import YOLO
