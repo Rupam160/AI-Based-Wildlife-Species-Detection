@@ -26,8 +26,15 @@ The goal is to automatically detect and classify wildlife species from images, w
 Due to GitHub size limits, raw images are not included in this repository.  
 Only the dataset structure and labels are provided as `dataset.zip`.
 
-📥 **Dataset Source (Roboflow Universe)**:  
-https://universe.roboflow.com/rupam/humans-and-animals-detection-v2vzd
+📥 **Dataset Source (Roboflow)**  
+
+The dataset was created and annotated using **Roboflow**.  
+Due to privacy and size constraints, the dataset is kept **private** on Roboflow.
+
+- Raw images are hosted securely on Roboflow
+- This repository includes only the dataset structure and labels (`dataset.zip`)
+- The full dataset can be programmatically downloaded during training using the Roboflow API (with an API key)
+
 
 ---
 
@@ -49,7 +56,7 @@ https://universe.roboflow.com/rupam/humans-and-animals-detection-v2vzd
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/Rupam160/AI-Based-Wildlife-Species-Detection.git
 cd AI-Based-Wildlife-Species-Detection
 
