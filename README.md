@@ -82,12 +82,6 @@ from ultralytics import YOLO
 model = YOLO("yolov8n.pt")
 model.train(data="data.yaml", epochs=50, imgsz=640)
 
-🔍 Inference
-Image Inference
-python inference/predict_image.py --image sample.jpg
-
-Video Inference
-python inference/predict_video.py --video input.mp4
 
 🎯 Applications
 
