@@ -59,7 +59,7 @@ Inference results were generated using Roboflow’s visualization tools.
 
 ### Sample Detection Outputs
 
-![Detection Result 1](result/Result 1.png)
+![Detection Result 1](result/class_distribution.png)
 ![Detection Result 2](result/Result 2.png)
 
 These results demonstrate accurate detection of wildlife species and humans in camera-trap-style images.
