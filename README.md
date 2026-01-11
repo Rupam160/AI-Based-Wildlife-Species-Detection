@@ -1,4 +1,4 @@
-# AI-Based Wildlife Species Detection 🐾
+# AI-Based Wildlife Species Detection 
 
 This project implements an **AI-based wildlife species detection system** using **YOLOv8** and **Roboflow**.  
 The goal is to automatically detect and classify wildlife species from images, making it suitable for **camera trap analysis, wildlife monitoring, and conservation research**.
